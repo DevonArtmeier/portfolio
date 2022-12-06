@@ -1,13 +1,118 @@
+<!-- Hello :-) -->
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>Devon Artmeier</title>
+	<title>Devon Artmeier's Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<p>Devon Artmeier</p>
+	<div class="page">
+		<div class="section">
+			<h1>Devon Artmeier</h1>
+			<div class="about">
+				<div class="links">
+					<img src="res/Devon.png">
+					<p><a href="mailto:devon.artmeier@outlook.com">Email</a> | 
+					<a href="https://github.com/DevonArtmeier">GitHub</a> | 
+					<a href="https://www.codewars.com/users/DevonArtmeier">Codewars</a></p>
+				</div>
+				<p>Hello! My name is Devon Artmeier, and I am a self-taught programmer (since 2011) with
+				enthusiam for technology, old and new. I am from the Cincinnati metropolitan area, and I enjoy studying 
+				game development and both low and high level programming.</p>
+				<p>On this page, you can see what I am capable of and a selection of recent projects I have worked on.</p>
+			</div>
+		
+		<h2>Skills</h2>
+			<div class="skills">
+				<ul>
+					<li>C#/.NET</li>
+					<li>C++</li>
+					<li>C</li>
+					<li>Visual Studio</li>
+					<li>Motorola 68000</li>
+					<li>Zilog Z80</li>
+					<li>Direct3D 11</li>
+					<li>OpenGL Core (3+)</li>
+					<li>Reverse Engineering (IDA Pro)</li>
+					<li>Windows</li>
+					<li>Linux</li>
+					<li>DOS</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="section">
+		<hr>
+		<h2>Projects</h2>
+			<div class="project">
+				<h3>Image Processing Test (2022)</h3>
+				<img src="res/ImageProcessor.png">
+				<p>A quick image processing test application I made in C#. Takes a source image, 
+				detects edges using the <a href="https://en.wikipedia.org/wiki/Sobel_operator">Sobel operator</a> and renders that onto a separate image, 
+				then shifts the hue of the source image, and then overlays the rendered edges.</p>
+				<p><a href="https://github.com/DevonArtmeier/Image-Processing-Test/releases/download/Release/ImageProcessTest.zip">Download</a> | 
+				<a href="https://github.com/DevonArtmeier/Image-Processing-Test">Source Code</a></p>
+			</div>
+			
+			<div class="project">
+				<h3>Sega Genesis Scroll Demo (2022)</h3>
+				<img src="res/GenesisScroll.gif">
+				<p>A very basic scrolling demo written in Motorola 68000 assembly for the Sega Genesis that displays a 1024x1024 image. The standard screen  
+				resolution on the Sega Genesis is 320x224, and the plane size is set to 512x256, so scrolling and drawing new rows 
+				of tiles as it scrolls is utilized to show the full image, and also wraps infinitely.</p>
+				<p><a href="https://github.com/DevonArtmeier/Genesis-Scroll-Demo/releases/download/Release/ScrollDemo.gen">Download</a> | 
+				<a href="https://github.com/DevonArtmeier/Genesis-Scroll-Demo">Source Code</a></p>
+			</div>
+			
+			<div class="project">
+				<h3>Violet Engine (2021-2022)</h3>
+				<img src="res/VioletEngine.gif">
+				<p>A C++ engine I've been working on that handles 2D graphics rendering with PNG images, Ogg audio playback, 
+				input handling, and updating actor/object code. Uses SDL2 for window management and reading input data and 
+				OpenGL 3.2 for the graphics API.</p>
+				<p><a href="https://github.com/DevonArtmeier/Violet-Engine/releases/download/Release/Violet-Engine-Test-Win32.zip">Download</a> | 
+				<a href="https://github.com/DevonArtmeier/Violet-Engine">Source Code</a></p>
+			</div>
+			
+			<div class="project">
+				<h3>Programmer Calculator (2021)</h3>
+				<img src="res/Calculator.png">
+				<p>A small calculator I made for programming purposes in C#. Supports the standard math operations, 
+				alongside order of operations, and also bitwise operations such as bit shifting, AND, OR, and XOR. Binary, 
+				octal, decimal, and hexadecimal notations are supported, as well. Results can be displayed as signed or 
+				unsigned, and within a byte (8 bits), word (16 bits), double word (32 bits), or quadtruple word (64 bits). 
+				Exponent and square root functions are also supported.</p>
+				<p><a href="https://github.com/DevonArtmeier/Devons-Programmer-Calculator/releases/download/Release/DevonsProgrammerCalc.zip">Download</a> | 
+				<a href="https://github.com/DevonArtmeier/Devons-Programmer-Calculator">Source Code</a></p>
+			</div>
+			
+			<div class="project">
+				<h3>Bad Apple!! Sega CD Demo (2021)</h3>
+				<iframe width="450" height="338" src="https://www.youtube.com/embed/hQhGbn72G2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>A fun demo written in Motorola 68000 assembly I made in a few days for the Sega CD that plays back the Bad Apple!! shadow art video 
+				in 30 FPS, fullscreen. The Sega CD is not known for smooth, full screen video, particularly with the slower 
+				disc drive speed and limited memory. To get this to work, I only used 2 colors, and combined 4 frames into 1 
+				16 color image, and with palette cycling, I can choose which frame to display from it. This allows me to save on data 
+				and also be given enough time to prepare another packet of data from the disc.</p>
+				<p><a href="https://github.com/DevonArtmeier/Bad-Apple-Sega-CD/releases/download/Release/BadApple.zip">Download</a> | 
+				<a href="https://github.com/DevonArtmeier/Bad-Apple-Sega-CD">Source Code</a></p>
+			</div>
+			
+			<div class="project">
+				<h3>Sega Genesis Emulator Detector (2019)</h3>
+				<p>An emulator detector for the Sega Genesis written in Motorola 68000 assembly. It can detect multiple emulators and check if it's being 
+				run on an actual console. I made this primarily as an exercise in programming and researching emulators, but it has helped a few emulator 
+				developers iron out some kinks to make them more accurate.</p>
+				<p><a href="https://github.com/DevonArtmeier/Genesis-Emulator-Detector">Source Code</a></p>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>Last updated December 6, 2022</p>
+		</div>
+	</div>
 </body>
 
 </html>
