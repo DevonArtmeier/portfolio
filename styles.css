@@ -69,6 +69,11 @@ div.project {
 	clear: both;
 }
 
+div.project hr {
+	clear: both;
+	border: 1px solid #C0C0FF;
+}
+
 div.project img {
 	width: 450px;
 }
