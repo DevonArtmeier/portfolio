@@ -19,6 +19,11 @@ h2 {
 	text-decoration: underline;
 }
 
+hr {
+	clear: both;
+	border: 1px solid #C0C0FF;
+}
+
 div.page {
 	background-color: #201040;
 	padding-left: 20px;
@@ -67,11 +72,6 @@ div.skills ul {
 
 div.project {
 	clear: both;
-}
-
-div.project hr {
-	clear: both;
-	border: 1px solid #C0C0FF;
 }
 
 div.project img {
