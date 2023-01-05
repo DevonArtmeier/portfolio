@@ -78,10 +78,17 @@ div.project img {
 	width: 450px;
 }
 
-div.project img, div.project iframe {
+div.project table, div.project img, div.project iframe {
 	float: right;
 	padding-left: 10px;
 	padding-bottom: 50px;
+}
+
+div.project table img {
+	width: auto;
+	height: 325px;
+	padding-left: 0px;
+	padding-bottom: 0px;
 }
 
 div.footer {
